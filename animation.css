@@ -6,6 +6,10 @@
     1700px 0 #cf11dd, 1800px 0 #cf11dd, 1900px 0 #cf11dd, 2000px 0 #cf11dd,
     2100px 0 #cf11dd, 2200px 0 #cf11dd, 2300px 0 #cf11dd, 2400px 0 #cf11dd,
     2500px 0 #cf11dd, 2600px 0 #cf11dd, 2700px 0 #cf11dd, 2800px 0 #cf11dd,
+    2900px 0 #cf11dd, 3000px 0 #cf11dd, 3100px 0 #cf11dd, 3200px 0 #cf11dd,
+    3300px 0 #cf11dd, 3400px 0 #cf11dd, 3500px 0 #cf11dd, 3600px 0 #cf11dd,
+    3700px 0 #cf11dd, 3800px 0 #cf11dd, 3900px 0 #cf11dd, 4000px 0 #cf11dd,
+    4100px 0 #cf11dd, 4200px 0 #cf11dd, 4300px 0 #cf11dd, 4400px 0 #cf11dd,
     -100px 0 #cf11dd, -200px 0 #cf11dd, -300px 0 #cf11dd, -400px 0 #cf11dd,
     -500px 0 #cf11dd, -600px 0 #cf11dd, -700px 0 #cf11dd, -800px 0 #cf11dd,
     -900px 0 #cf11dd, -1000px 0 #cf11dd, -1100px 0 #cf11dd, -1200px 0 #cf11dd,
@@ -28,10 +32,9 @@
 }
 
 .perspective {
-  height: 400px;
-  overflow: hidden;
+  /* overflow: hidden; */
   perspective: 200px;
-  max-height: 30%;
+  /* height: 33%; */
 }
 
 .blur-effect {
