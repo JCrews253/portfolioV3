@@ -57,9 +57,9 @@
 
 @keyframes wave {
   0% {
-    transform: translateY(0) scaleY(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
   }
   100% {
-    transform: translateY(-22vw) scaleY(0);
+    transform: translateY(calc(-0.8 * min(40vw, 40vh))) scaleY(0) scaleX(1.1);
   }
 }
