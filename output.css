@@ -795,6 +795,10 @@ video {
   margin-top: 5rem;
 }
 
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -929,6 +933,10 @@ video {
 
 .max-h-\[70\%\] {
   max-height: 70%;
+}
+
+.min-h-\[100vh\] {
+  min-height: 100vh;
 }
 
 .w-1 {
@@ -2286,6 +2294,10 @@ video {
 
 .pl-5 {
   padding-left: 1.25rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
 }
 
 .text-left {
