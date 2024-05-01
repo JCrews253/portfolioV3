@@ -1,0 +1,65 @@
+.grid-lines-vertical {
+  box-shadow: 100px 0 #cf11dd, 200px 0 #cf11dd, 300px 0 #cf11dd, 400px 0 #cf11dd,
+    500px 0 #cf11dd, 600px 0 #cf11dd, 700px 0 #cf11dd, 800px 0 #cf11dd,
+    900px 0 #cf11dd, 1000px 0 #cf11dd, 1100px 0 #cf11dd, 1200px 0 #cf11dd,
+    1300px 0 #cf11dd, 1400px 0 #cf11dd, 1500px 0 #cf11dd, 1600px 0 #cf11dd,
+    1700px 0 #cf11dd, 1800px 0 #cf11dd, 1900px 0 #cf11dd, 2000px 0 #cf11dd,
+    2100px 0 #cf11dd, 2200px 0 #cf11dd, 2300px 0 #cf11dd, 2400px 0 #cf11dd,
+    2500px 0 #cf11dd, 2600px 0 #cf11dd, 2700px 0 #cf11dd, 2800px 0 #cf11dd,
+    -100px 0 #cf11dd, -200px 0 #cf11dd, -300px 0 #cf11dd, -400px 0 #cf11dd,
+    -500px 0 #cf11dd, -600px 0 #cf11dd, -700px 0 #cf11dd, -800px 0 #cf11dd,
+    -900px 0 #cf11dd, -1000px 0 #cf11dd, -1100px 0 #cf11dd, -1200px 0 #cf11dd,
+    -1300px 0 #cf11dd;
+}
+
+.grid-lines-vertical::before {
+  display: flex;
+  position: absolute;
+  left: -1000px;
+  right: -10000px;
+  transform: translateX(-50%);
+  height: 0.25rem;
+  box-shadow: 0 50px #cf11dd, 0 100px #cf11dd, 0 150px #cf11dd, 0 200px #cf11dd,
+    0 250px #cf11dd, 0 300px #cf11dd, 0 350px #cf11dd, 0 400px #cf11dd,
+    0 450px #cf11dd, 0 500px #cf11dd, 0 550px #cf11dd, 0 600px #cf11dd,
+    0 650px #cf11dd, 0 700px #cf11dd, 0 750px #cf11dd, 0 800px #cf11dd,
+    0 850px #cf11dd, 0 900px #cf11dd, 0 950px #cf11dd;
+  animation: grid 1s linear infinite;
+}
+
+.perspective {
+  height: 400px;
+  overflow: hidden;
+  perspective: 200px;
+  max-height: 30%;
+}
+
+.blur-effect {
+  box-shadow: 0px 0px 30px 30px rgba(207, 17, 221, 1);
+}
+
+.rotate {
+  transform: rotateX(25deg);
+}
+
+.wave {
+  animation: wave 10s linear infinite;
+}
+
+@keyframes grid {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100px);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0) scaleY(1);
+  }
+  100% {
+    transform: translateY(-22vw) scaleY(0);
+  }
+}
